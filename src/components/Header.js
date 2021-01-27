@@ -1,24 +1,29 @@
 import React from 'react'
-import "./Header.css"
+import "./Header.css";
 import TeslaLogo from '../assets/teslaLogoSmall.svg'
+import ListIcon from '@material-ui/icons/List';
+import IconButton from '@material-ui/core/IconButton';
 
 function Header() {
     return (
         <div className="header">
             <div className="header_logo">
-                <img src={TeslaLogo} alt="TeslaLogo"/>
+             <img src={TeslaLogo} alt='tesla logo'/> 
             </div>
             <div className="header_center">
-                <p>Model S</p>
-                <p>Model 3</p>
-                <p>Model X</p>
-                <p>Model Y</p>
-                <p>Solar Roof</p>
-                <p>Solar Panel</p>
+                <p> Model S</p>
+                <p> Model 3 </p>
+                <p> Model X </p>
+                <p> Model Y </p>
+                <p> Solar Roof </p>
+                <p> Solar Panel </p>
             </div>
-            <div className="header_right"> 
-                <p>Shop</p>
-                <p>Tesla Account</p>
+            <div className="header_right">
+                <p> Shop </p>
+                <p> Tesla Account </p>
+                <p>
+                     <ListIcon/> </p>
+
             </div>
         </div>
     )
